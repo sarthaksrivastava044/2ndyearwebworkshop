@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKAS</title>
+   
+</head>
+<body>
+    <p id="para"></p>
+    <button>SHOW RESULT</button>
+    <script>
+    //     let a=Number(prompt("Enter age"))
+    //     if(a>=18)
+    // {
+    //     if(confirm("You Want To Check Eligibility Criteria"))
+    //     alert("you are eligible ")
+    //     else{
+    //     alert("You Dont Want To Check")
+    //     }
+    // }
+    // else
+    // alert("Not Eligible")
+   let val;
+    let a=()=>{
+        let val1=(prompt("Enter FIRST Name"))
+        let val2=(prompt("Enter LAST Name"))
+        return val1.concat(" ").concat(val2)
+    }
+    val=a()
+    document.querySelector("button").onclick=()=>{
+        document.querySelector("#para").innerText=val;
+    }
+    </script>
+</body>
+</html>
