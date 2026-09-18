@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter The Size"));
+        let arr = [];
+
+        for (let i = 0; i < a; i++) {
+            let b = parseInt(prompt(`Enter the ${i + 1} value`));
+            arr.push(b);
+        }
+
+       
+        function calculateSum(...numbers) {
+            let total = 0;
+            for (let num of numbers) {
+                total += num;
+            }
+            return total; 
+        }
+
+        let result = calculateSum(...arr);
+        alert(`Sum Of Values: ${result}`);
+        console.log(`Sum Of Values: ${result}`);
+    </script>
+</body>
+</html>
