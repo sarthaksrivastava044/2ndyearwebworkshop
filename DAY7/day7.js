@@ -77,14 +77,59 @@
 // let obj=new Sarthak()
 // let obj2=new Sarthak()
 // obj.show()
-class student{
-    static func=()=>{
-        console.log("Hello")
+// class student{
+//     static func=()=>{
+//         console.log("Hello")
+//     }
+//     func2=()=>{
+//         console.log("Hi")
+//     }
+// }
+// let obj= new student()
+// student.func()
+// obj.func2()
+// class university{
+//     roll=0;name="";mark=0;
+//     constructor(roll,name,mark){
+//         this.roll=roll
+//         this.name=name
+//         this.mark=mark
+//     }
+//     displayResult=()=>{
+//         console.log(`student ${this.name}`)
+//         console.log(`Roll no ${this.roll}`)
+//         if(this.mark>60)
+//             console.log("Pass")
+//         else
+//             console.log("Fail")
+//     }
+//     show=()=>{
+//         console.log(`Students are ${university.count}`)
+//     }
+// }
+// let obj1= new university(25,"Sarthak")
+// obj1.displayResult()
+// let obj2=new university(65,"Rohit")
+// obj2.displayResult()
+
+class Bank{
+    acc=0
+    hol=""
+    static balance=0
+    constructor(ac,ho,bala)
+    {
+        this.acc+=ac
+        this.hol=ho
+        Bank.balance+=bala
+
+
     }
-    func2=()=>{
-        console.log("Hi")
+    withdraw(amt)
+    {
+        if(Bank.balance>amt)
+        Bank.balance-=amt
+        else
+        console.log('Insufficient')
     }
 }
-let obj= new student()
-student.func()
-obj.func2()
+
